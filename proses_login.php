@@ -10,7 +10,8 @@ if(isset($_POST['submit'])) {
     $sql= mysqli_query($con, "SELECT * FROM user WHERE username='$username' AND password='$password'");
     $cek = mysqli_num_rows($sql);
 
-    if($cek > 0) {
+    //cek login
+    if($cek > 0) {  
         $data = mysqli_fetch_assoc($sql);
 
         if($data['level'] == "admin") {
