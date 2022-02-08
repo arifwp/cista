@@ -44,7 +44,7 @@
    if(isset($_GET['message'])) {
 
       if($_GET['message'] == 'login_fail') { ?>
-        <script>
+        <script>  
           Swal.fire(
             'Gagal!',
             'Username & Password Tidak Cocok Dalam Database',
